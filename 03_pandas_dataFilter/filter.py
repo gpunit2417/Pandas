@@ -20,5 +20,8 @@ print("************************\n")
 # print(filterData)
 
 # select particular columns from a dataframe
-data = df[["EmpName", "Salary"]]
-print(data)
+# data = df[["EmpName", "Salary"]]
+# print(data)
+
+# unique value in a column
+print(df["Department"].unique())
