@@ -16,5 +16,9 @@ print("************************\n")
 # print(filterData)
 
 # filtered data using == sign
-filterData = df[df.EmpName == "Punit"]
-print(filterData)
+# filterData = df[df.EmpName == "Punit"]
+# print(filterData)
+
+# select particular columns from a dataframe
+data = df[["EmpName", "Salary"]]
+print(data)
