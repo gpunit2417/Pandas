@@ -20,5 +20,12 @@ print(df.head().to_string())
 # print(df)
 
 # rename() function renames the column names... the column name is case sensitive... name cannot be passed instead we need to pass Name.
-df.rename(columns={'Name':'Fullname'}, inplace = True)
-print(df)
+# df.rename(columns={'Fullname':'Name'}, inplace = True)
+# print(df)
+
+# way to drop first row and column together
+# df.iloc[row, column] is the syntax
+# to delete first row df.iloc[1:, :]
+# to delete first column df.iloc[:, 1:]
+new_df = df.iloc[1:, 1:]
+print(new_df)
