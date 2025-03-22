@@ -16,5 +16,9 @@ print(df.head().to_string())
 
 # fillna() fills the missing value with the specified value
 # in this case the missing value will be filled by the mean of the other values of the age column
-df['age'].fillna(df['age'].mean(), inplace = True)
+# df['age'].fillna(df['age'].mean(), inplace = True)
+# print(df)
+
+# rename() function renames the column names... the column name is case sensitive... name cannot be passed instead we need to pass Name.
+df.rename(columns={'Name':'Fullname'}, inplace = True)
 print(df)
