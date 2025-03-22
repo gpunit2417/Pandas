@@ -6,5 +6,6 @@ print(df.head().to_string())
 # data = df.dropna()
 # print(data)
 
+# df['Name'] != '' checks for an empty string
 data = df[(df['Name'] != '') & (df['age'].notna())]
 print(data)
