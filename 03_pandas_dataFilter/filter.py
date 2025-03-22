@@ -1,0 +1,16 @@
+import pandas as p
+df = p.DataFrame({
+    'EmpId' : [123, 134, 135, 145, 156, 173],
+    'EmpName': ['Rohan', 'Surender', 'Aradhana', 'Monika', 'Punit', 'Naren'],
+    "Salary" : [40000, 35000, 65000, 45000, 70000, 56000],
+    "Department": ['MBA', 'Finance', 'Testing', 'Developer', 'Developer', 'Law']
+})
+
+print(df.to_string())
+print("************************\n")
+
+
+# below two lines are same 
+# filterData = df[df.EmpId > 135]
+filterData = df[df["EmpId"] > 135]
+print(filterData)
