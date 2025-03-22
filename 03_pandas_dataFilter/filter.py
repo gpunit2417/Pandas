@@ -26,6 +26,10 @@ print("************************\n")
 # unique value in a column
 # print(df["Department"].unique())
 
+# sort the data 
+# new_df = df.sort_values(by=["Salary"], ascending=False)
+# print(new_df)
 
-new_df = df.sort_values(by=["Salary"], ascending=False)
-print(new_df)
+# one hot-encoding
+new = p.get_dummies(df, columns=["Salary"])
+print(new)
