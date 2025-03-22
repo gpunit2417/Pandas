@@ -12,5 +12,9 @@ print("************************\n")
 
 # below two lines are same 
 # filterData = df[df.EmpId > 135]
-filterData = df[df["EmpId"] > 135]
+# filterData = df[df["EmpId"] > 135]
+# print(filterData)
+
+# filtered data using == sign
+filterData = df[df.EmpName == "Punit"]
 print(filterData)
