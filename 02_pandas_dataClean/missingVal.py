@@ -27,5 +27,9 @@ print(df.head().to_string())
 # df.iloc[row, column] is the syntax
 # to delete first row df.iloc[1:, :]
 # to delete first column df.iloc[:, 1:]
-new_df = df.iloc[1:, 1:]
-print(new_df)
+# new_df = df.iloc[1:, 1:]
+# print(new_df)
+
+# drop any specific columns
+df.drop(columns=['Name'], inplace=True)
+print(df)
