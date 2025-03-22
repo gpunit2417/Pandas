@@ -31,5 +31,9 @@ print("************************\n")
 # print(new_df)
 
 # one hot-encoding
-new = p.get_dummies(df, columns=["Salary"])
-print(new)
+# new = p.get_dummies(df, columns=["Salary"])
+# print(new)
+
+# applied a function
+df["newSalary"] = df['Salary'].apply(lambda x: x*2)
+print(df)
