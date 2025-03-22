@@ -11,5 +11,10 @@ print(df.head().to_string())
 # print(data)
 
 #way to check for a None string value
-data = df[df['Name'].notna()]
-print(data)
+# data = df[df['Name'].notna()]
+# print(data)
+
+# fillna() fills the missing value with the specified value
+# in this case the missing value will be filled by the mean of the other values of the age column
+df['age'].fillna(df['age'].mean(), inplace = True)
+print(df)
