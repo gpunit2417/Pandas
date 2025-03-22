@@ -24,4 +24,8 @@ print("************************\n")
 # print(data)
 
 # unique value in a column
-print(df["Department"].unique())
+# print(df["Department"].unique())
+
+
+new_df = df.sort_values(by=["Salary"], ascending=False)
+print(new_df)
